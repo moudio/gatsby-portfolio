@@ -1,0 +1,42 @@
+$lightgrey: rgb(204,214, 246); 
+$lightgreen: rgb(100, 255, 218);
+
+.left-navigation {
+    color: $lightgrey; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.4;
+    list-style-type: none;
+
+    .resume-link {
+        color: $lightgreen; 
+        border: 1px solid $lightgreen;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: $lightgrey;
+    }
+
+    li a:hover {
+        color: $lightgreen;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    height: 60px;
+    margin-bottom: 100px;
+
+    h1 a {
+        color: $lightgrey;
+        text-decoration: none;
+
+    }
+}
