@@ -3,7 +3,7 @@ import ProjectStyles from "./project.module.scss"
 import { GrCode } from "react-icons/gr"
 import { AiFillGithub } from "react-icons/ai"
 import { FiExternalLink } from "react-icons/fi"
-export default function Project() {
+export default function Project({ title, description, technologies }) {
   return (
     <div className={ProjectStyles.container}>
       <div>
@@ -12,7 +12,7 @@ export default function Project() {
       <div>
         <h3>Project</h3>
         <div>
-          <AiFillGithub />
+          <AiFillGithub></AiFillGithub>
           <FiExternalLink />
         </div>
       </div>

@@ -1,7 +1,10 @@
 import React from "react"
 import PortfolioStyles from "./portfolio.module.scss"
 import FeaturedProject from "../FeaturedProject/FeaturedProject"
+import data from "../../data"
+
 function Portfolio() {
+  const { featuredProjects } = data
   return (
     <div className={PortfolioStyles.portfolio}>
       <div className={PortfolioStyles.title}>
@@ -9,8 +12,9 @@ function Portfolio() {
         <span></span>
       </div>
       <div>
-        <FeaturedProject />
-        <FeaturedProject />
+        {featuredProjects.map(project => {
+          return <FeaturedProject {...project} />
+        })}
       </div>
     </div>
   )

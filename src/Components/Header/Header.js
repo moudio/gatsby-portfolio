@@ -9,11 +9,12 @@ function Header() {
       </h1>
       <ul className={HeaderStyles.leftNavigation}>
         <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
           {" "}
           <Link to="/blog">Blog</Link>{" "}
         </li>
-        <li>Work</li>
-        <li>About</li>
         <li className={HeaderStyles.resumeLink}>Resume</li>
       </ul>
     </nav>

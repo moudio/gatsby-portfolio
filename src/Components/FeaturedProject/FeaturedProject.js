@@ -3,28 +3,38 @@ import FeaturedProjectStyles from "./featuredproject.module.scss"
 import AppointCar from "../../Images/appointment.jpg"
 import { AiFillGithub } from "react-icons/ai"
 import { FiExternalLink } from "react-icons/fi"
-function Project() {
+function Project({
+  title,
+  description,
+  technologies,
+  github,
+  website,
+  image,
+  slug,
+}) {
   return (
     <div className={`${FeaturedProjectStyles.projectContainer}`}>
       <div className={FeaturedProjectStyles.imageContainer}>
-        <img src={AppointCar} alt="Appointcar" />
+        <img src={image} alt={slug} />
       </div>
       <div className={FeaturedProjectStyles.textContainer}>
         <span>Featured Project</span>
-        <h3>AppointCar</h3>
-        <p className={FeaturedProjectStyles.description}>
-          A car appointment app. Create your profile and book for your next
-          favorite car
-        </p>
+        <h3>{title}</h3>
+        <p className={FeaturedProjectStyles.description}>{description}</p>
         <div className={FeaturedProjectStyles.technologies}>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>ReactJs</span>
+          {technologies.map(technology => (
+            <span>{technology}</span>
+          ))}
         </div>
         <div className={FeaturedProjectStyles.links}>
-          <AiFillGithub />
-          <FiExternalLink />
+          <a href={github} target="_blank">
+            {" "}
+            <AiFillGithub />
+          </a>
+          <a href={website} target="_blank">
+            {" "}
+            <FiExternalLink />
+          </a>
         </div>
       </div>
     </div>
