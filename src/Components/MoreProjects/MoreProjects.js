@@ -1,7 +1,9 @@
 import React from "react"
 import Project from "../Project/Project"
 import MoreProjectsStyle from "./moreProjects.module.scss"
+import data from "../../data"
 function MoreProjects() {
+  const { otherProjects } = data
   return (
     <div className={MoreProjectsStyle.container}>
       <div className={MoreProjectsStyle.title}>
@@ -9,12 +11,9 @@ function MoreProjects() {
         <span></span>
       </div>
       <div className={MoreProjectsStyle.projectsContainer}>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        {otherProjects.map(project => (
+          <Project {...project} />
+        ))}
       </div>
     </div>
   )

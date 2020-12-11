@@ -21,5 +21,14 @@ $lightgreen: rgb(100,255,218);
     justify-content: space-around;
     align-items: center;
 }
+
+
+    
+}
+
+@media(max-width: 800px){
+    .container {
+        width: 80%;
+    }
     
 }

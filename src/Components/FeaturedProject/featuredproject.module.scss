@@ -52,6 +52,17 @@ $darkergray: rgb(136, 146, 176);
     justify-content: space-around;
     margin-top: 20px;
     padding: 0 20px;
+    
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: $lightgrey; 
+
+        &:hover {
+            color: $lightgreen;
+        }
+
+    }
 }
 
 
@@ -59,9 +70,28 @@ $darkergray: rgb(136, 146, 176);
     display: flex;
     justify-content: space-around;
     padding: 0 10px;
+    flex-wrap: wrap;
     
     span {
         color: $darkergray;
+        display: inline-block;
+        margin:  10px;
+    }
+}
+
+}
+
+@media(max-width: 1500px){
+    .project-container {
+        display: block;
+        
+        .text-container {
+        p {
+            position: static; 
+            margin: 0 auto;
+            text-align: center;
+            width: 90%;
+        }
     }
 }
 

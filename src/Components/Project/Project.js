@@ -3,26 +3,31 @@ import ProjectStyles from "./project.module.scss"
 import { GrCode } from "react-icons/gr"
 import { AiFillGithub } from "react-icons/ai"
 import { FiExternalLink } from "react-icons/fi"
-export default function Project({ title, description, technologies }) {
+export default function Project({
+  title,
+  description,
+  technologies,
+  github,
+  website,
+}) {
   return (
     <div className={ProjectStyles.container}>
-      <div>
-        <GrCode />
+      <div className={ProjectStyles.iconContainer}>
+        <GrCode className={ProjectStyles.icon} />
       </div>
       <div>
-        <h3>Project</h3>
-        <div>
-          <AiFillGithub></AiFillGithub>
-          <FiExternalLink />
+        <h3>{title}</h3>
+        <div className={ProjectStyles.links}>
+          <a href={github} target="_blank">
+            <AiFillGithub />
+          </a>
+          <a href={website} target="_blank">
+            <FiExternalLink />
+          </a>
         </div>
       </div>
       <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse
-          temporibus debitis iste eos harum mollitia cumque, sed, optio
-          consectetur autem ipsum molestiae at doloremque dignissimos quia neque
-          voluptas. Quo!
-        </p>
+        <p>{description}</p>
       </div>
     </div>
   )

@@ -8,7 +8,7 @@ $lightnavy: rgb(23, 42, 69);
     border: 1px solid $lightgrey;
     padding: 10px;
     transition: all 0.3s ease-in-out;
-background-color: $lightnavy;
+// background-color: $lightnavy;
 
     &:hover {
         transform: translateY(-10px);
@@ -17,7 +17,34 @@ background-color: $lightnavy;
     }
 
     p {
-        background-color: $lightnavy;
-        ;
+        // background-color: $lightnavy;
+        
     }
+
+    .icon {
+        font-size: 30px;
+        color: $lightgreen !important;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+
+        font-size: 30px;
+        text-decoration: none;
+
+        a {
+            color: $lightgrey; 
+            margin: 0 20px;
+            &:hover {
+                color: $lightgreen; 
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+.container {
+    width: 80%;
+}
 }
