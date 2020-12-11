@@ -1,6 +1,8 @@
 import React from "react"
 import { useEffect } from "react"
 import HeroStyles from "./Hero.module.scss"
+import scrollTo from "gatsby-plugin-smoothscroll"
+
 function Hero() {
   useEffect(() => {
     // typeWriter()
@@ -26,7 +28,12 @@ function Hero() {
         I'm a full-stack developer based in Dakar, Senegal. In specialize in
         building websites and web applications.
       </p>
-      <button className={HeroStyles.ctaBtn}>Get In Touch</button>
+      <button
+        className={HeroStyles.ctaBtn}
+        onClick={() => scrollTo(".contact")}
+      >
+        Get In Touch
+      </button>
     </div>
   )
 }

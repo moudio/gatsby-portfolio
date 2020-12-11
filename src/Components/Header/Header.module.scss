@@ -17,10 +17,13 @@ $lightgreen: rgb(100, 255, 218);
         padding: 10px;
         border-radius: 5px;
     }
+  
 
     li a {
         text-decoration: none;
         color: $lightgrey;
+        display: inline-block;
+
     }
 
     li a:hover {

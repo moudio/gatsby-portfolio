@@ -1,9 +1,9 @@
 $lightgrey: rgb(204,214, 246); 
 $lightgreen: rgb(100,255,218);
+$navy: rgb(10,25,47); 
 
 
 .icon-container {
-    border: 5px solid $lightgrey;
     height: 50px;
     width: 50px;
     display: none;
@@ -44,12 +44,13 @@ $lightgreen: rgb(100,255,218);
 
 .nav-icon::before {
     transform: translateY(-13px);
-
     
 }
 
 .nav-icon.open::before {
     transform: rotate(45deg) translate(13px, -13px);
+    background-color: $lightgreen;
+
 }
 
 .nav-icon::after {
@@ -58,6 +59,8 @@ $lightgreen: rgb(100,255,218);
 
 .nav-icon.open::after {
     transform:  rotate(-45deg) translate(13px, 13px);
+    background-color: $lightgreen;
+
 }
 
 .mobileNav {
@@ -67,15 +70,20 @@ $lightgreen: rgb(100,255,218);
     flex-direction: column;
     height: 100vh;
     background-color: black;
+    opacity: 0.89;
     position: fixed;
     margin: 0;
     right: 0;
     padding: 0;
-    width: 200px;
+    width: 250px;
     z-index: 2;
-    transform: translateX(200px);
+    transform: translateX(300px);
     transition: all 0.6s ease-in-out;
     list-style-type: none;
+
+    li {
+        margin: 20px auto;
+    }
     li a {
         text-decoration: none;
         color: $lightgreen
@@ -83,7 +91,10 @@ $lightgreen: rgb(100,255,218);
     &.show {
         transform: translateX(0);
     }
+
+  
 }
+
 
 
 @media(max-width:770px){

@@ -11,12 +11,13 @@ $lightgreen: rgb(100,255,218);
         display: flex;
         flex-wrap: wrap;
 
-        .content {
-            width: 60%;
-            margin: 0px 50px;
-            text-align: justify;
-            line-height: 1.6;
-        }
+       
+    }
+    .content {
+        width: 60%;
+        margin: 0px 50px;
+        text-align: justify;
+        line-height: 1.6;
     }
 
     .picture-container {
@@ -79,14 +80,16 @@ $lightgreen: rgb(100,255,218);
 @media(max-width: 750px){
     
     .content-image {
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
         .content {
-            width: 100%;
+            width: 80%;
+            margin-bottom: 30px;
         }
         .picture-container {
             width: 70%;
+            margin: 40px auto;
         }
 
     }

@@ -3,6 +3,8 @@ import HeaderStyles from "./Header.module.scss"
 import { Link } from "gatsby"
 import "./Menu.scss"
 import { useState } from "react"
+import resume from "./Resume.pdf"
+
 function Header() {
   const [showMobileNav, setShowMobileNav] = useState(false)
   const handleNav = () => {
@@ -30,7 +32,11 @@ function Header() {
             {" "}
             <Link to="/blog">Blog</Link>{" "}
           </li>
-          <li className={HeaderStyles.resumeLink}>Resume</li>
+          <li className={HeaderStyles.resumeLink}>
+            <a href={resume} target="_blank">
+              Resume
+            </a>{" "}
+          </li>
         </ul>
       </nav>
       <ul className={`mobileNav ${showMobileNav ? "show" : "hide"}`}>
@@ -41,7 +47,12 @@ function Header() {
           {" "}
           <Link to="/blog">Blog</Link>{" "}
         </li>
-        <li className={HeaderStyles.resumeLink}>Resume</li>
+        <li>
+          {" "}
+          <a href={resume} className={HeaderStyles.resumeLink} target="_blank">
+            Resume
+          </a>
+        </li>
       </ul>
     </>
   )
