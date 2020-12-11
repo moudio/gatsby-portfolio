@@ -1,0 +1,18 @@
+$lightgrey: rgb(204, 214, 246);
+$lightgreen: rgb(100,255,218);
+$darkergray: rgb(136, 146, 176);
+.footer {
+    text-align: center;
+    color: $darkergray;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    color: $lightgrey;
+    height: 150px;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 25px;
+}

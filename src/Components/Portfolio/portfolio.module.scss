@@ -1,0 +1,32 @@
+$lightgrey: rgb(201, 214, 246);
+$lightgreen: rgb(100,255,218);
+
+
+.portfolio {
+    color: $lightgrey;
+    margin: 10px auto;
+    margin-top: 50px;
+    padding: 30px;
+    width: 50%; 
+
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        
+        h2 {
+            text-align: center;
+            display: inline-block; 
+            flex: 0.3;
+            
+        }
+        
+        span {
+            background-color: $lightgrey;
+            display: block;
+            height: 0.2px;
+            flex: 0.5;
+        }
+    }
+}

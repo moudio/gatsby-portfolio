@@ -1,0 +1,70 @@
+$light-navy: #172a45;
+$lightgrey: rgb(204, 214, 246);
+$lightgreen: rgb(100,255,218);
+$darkergray: rgb(136, 146, 176);
+
+
+
+.project-container {
+    display: flex;
+    position: relative;
+    margin-bottom: 100px;
+.image-container {
+    flex: 0.7;
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.text-container {
+    flex: 0.3;
+    top:0; 
+    right: 0;
+    right: 0;
+    position: relative;
+    text-align: center;
+
+    h3 {
+        font-size: 20px;
+    }
+    span {
+        color: $lightgreen;
+    }
+    p {
+        position: relative;
+        left: -40%;
+        background: $light-navy;
+        color:$lightgrey;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 20px;
+        width: 300px;
+        margin: 30px auto;
+
+    }
+    
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+
+.technologies {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+    
+    span {
+        color: $darkergray;
+    }
+}
+
+}
+
+

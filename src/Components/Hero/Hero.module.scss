@@ -1,0 +1,48 @@
+$lightgrey: rgb(204, 214, 246);
+$lightgreen: rgb(100,255,218);
+$darkergray: rgb(136, 146, 176);
+$navy: rgb(10,25,47); 
+
+.app-hero {
+    color: $lightgrey;
+    padding: 0px 150px;
+    height: 100vh;
+
+
+    h1 {
+        font-size: 16px;
+        color:$lightgreen;
+    }
+    h2 {
+        color: $darkergray;
+        font-size: 74px;
+    }
+    h3 {
+            color: $lightgrey;
+            font-size: 50px;
+    }
+
+    .description {
+        color: $lightgrey;
+        font-size: 20px;
+    }
+
+    .ctaBtn {
+        color:$lightgreen;
+        border: 1px solid $lightgreen;
+        font-size: 20px;
+        padding: 20px 10px;
+        border-radius: 6px;
+        margin-top: 20px;
+        font-family: 'Space Mono', monospace;
+cursor: pointer;
+    
+    }
+
+    .ctaBtn:hover {
+        background-color: $lightgreen;
+        color: $navy;
+
+    }
+    
+}

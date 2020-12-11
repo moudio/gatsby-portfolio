@@ -1,0 +1,18 @@
+$lightgrey: rgb(201, 214, 246);
+$lightgreen: rgb(100,255,218);
+
+
+.container {
+    text-align: center;
+    color: $lightgrey;
+
+    p {
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    a {
+        color: $lightgreen
+    }
+
+}
