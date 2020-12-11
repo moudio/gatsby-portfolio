@@ -12,7 +12,7 @@ $lightgreen: rgb(100,255,218);
         flex-wrap: wrap;
 
         .content {
-            flex: 0.6;
+            width: 60%;
             margin: 0px 50px;
             text-align: justify;
             line-height: 1.6;
@@ -20,8 +20,8 @@ $lightgreen: rgb(100,255,218);
     }
 
     .picture-container {
-        width: 300px;
-        flex: 0.3;
+        width: 25%;
+        
         
 
 
@@ -72,5 +72,22 @@ $lightgreen: rgb(100,255,218);
 @media(max-width: 1300px){
     .about {
         width: 90%;
+    }
+
+}
+
+@media(max-width: 750px){
+    
+    .content-image {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .content {
+            width: 100%;
+        }
+        .picture-container {
+            width: 70%;
+        }
+
     }
 }
