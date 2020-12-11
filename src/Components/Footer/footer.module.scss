@@ -15,4 +15,11 @@ $darkergray: rgb(136, 146, 176);
     justify-content: space-between;
     padding: 20px;
     font-size: 25px;
+
+    a {
+        color: $lightgrey;
+        &:hover {
+            color: $lightgreen;
+        }
+    }
 }

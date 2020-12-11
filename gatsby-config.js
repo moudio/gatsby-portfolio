@@ -6,5 +6,9 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ["gatsby-plugin-sass", `gatsby-plugin-smoothscroll`],
+  plugins: [
+    "gatsby-plugin-sass",
+    `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-react-helmet`,
+  ],
 }

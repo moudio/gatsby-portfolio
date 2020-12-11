@@ -30,7 +30,9 @@ function Header() {
           </li>
           <li>
             {" "}
-            <Link to="/blog">Blog</Link>{" "}
+            <a href="https://mouhadiouf.medium.com/" target="_blank">
+              Blog
+            </a>{" "}
           </li>
           <li className={HeaderStyles.resumeLink}>
             <a href={resume} target="_blank">
