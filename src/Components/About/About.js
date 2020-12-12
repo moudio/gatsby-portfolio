@@ -18,7 +18,10 @@ function About() {
           <p>
             So I decided to follow my passion and apply at Microverse to become
             a developer. Now I am in the top 3% web developers among 38K
-            developers around the world (according to <a href="#">Codersrank</a>{" "}
+            developers around the world (according to{" "}
+            <a href="https://codersrank.io/" target="_blank">
+              Codersrank
+            </a>{" "}
             ).
           </p>
           <p>

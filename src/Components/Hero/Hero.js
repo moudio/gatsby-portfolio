@@ -2,6 +2,7 @@ import React from "react"
 import { useEffect } from "react"
 import HeroStyles from "./Hero.module.scss"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import HeroAnimation from "./HeroAnimation.module.scss"
 
 function Hero() {
   useEffect(() => {
@@ -22,7 +23,7 @@ function Hero() {
       <h1>Hello, I am</h1>
       <h2>Mouhamadou Diouf</h2>
       <div className={HeroStyles.typewriter}>
-        <h3> I build things for the web</h3>
+        <h3 className={HeroAnimation.title}>I build things for the web</h3>
       </div>
       <p className={HeroStyles.description}>
         I'm a full-stack developer based in Dakar, Senegal. In specialize in
