@@ -3,5 +3,20 @@ $lightgreen: rgb(100,255,218);
 $darkergray: rgb(136, 146, 176);
 $navy: rgb(10,25,47); 
 
-.app-container {
+.loading {
+    font-size: 100px;
+    color: $lightgreen;
 }
+
+.balls-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    img {
+        width: 70px;
+    }
+}
+
+
