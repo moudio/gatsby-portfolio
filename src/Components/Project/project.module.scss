@@ -3,8 +3,9 @@ $lightgreen: rgb(100,255,218);
 $lightnavy: rgb(23, 42, 69);
 $lighternavy: #172a45;
 .container {
-    width: 270px;
-    height: 250px;
+
+    width: 280px;
+    height: 300px;
     margin: 10px ;
     color: $lightgrey;
     background-color: $lighternavy;
@@ -13,6 +14,7 @@ $lighternavy: #172a45;
     transition: all 0.3s ease-in-out;
     padding: 30px;
     border-radius: 5px;
+        font-family: 'Source Code Pro', monospace;
 
     &:hover {
         transform: translateY(-10px);

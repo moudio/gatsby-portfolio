@@ -63,7 +63,7 @@ const data = {
     {
       title: "Asteroids",
       description:
-        "This app communicates with the Nasa API to display asteroids based on their IDs or date. It uses React on the front-end and Firebase on the backend.",
+        "This app communicates with the Nasa API to display asteroids based on their IDs or date.",
       technologies: ["HTML", "CSS", "React", "Redux"],
       slug: "asteroids",
       github: "https://github.com/MouhaDiouf/asteroids",
@@ -82,7 +82,7 @@ const data = {
     {
       title: "Cocktails",
       description:
-        "The project is single page react app based on a catalog of cocktails. It's a browsable list of cocktails you can research and access the details for each of them.",
+        "The project is single page react app based on a catalog of cocktails.",
       technologies: ["HTML", "CSS", "React", "Cocktailsdb API"],
       slug: "coktails",
       github: "https://github.com/MouhaDiouf/cocktails",

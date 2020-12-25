@@ -41,9 +41,12 @@ $navy: rgb(10,25,47);
         padding: 20px 10px;
         border-radius: 6px;
         margin-top: 20px;
-        font-family: 'Space Mono', monospace;
+        font-family: 'Source Code Pro', monospace;
 cursor: pointer;
     
+    &:focus {
+        outline: none;
+    }
     }
 
     .ctaBtn:hover {

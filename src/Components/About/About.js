@@ -12,13 +12,21 @@ function About() {
         <div className={AboutStyles.content}>
           <p>
             Hello, I am Mouhamadou, and I am a full-stack web developer based in
-            Dakar Senegal. Technology has always been an interest for me. And I
-            discovered that passion while working as a food engineer.
+            Dakar Senegal.
+            <p>
+              Technology has always been an interest for me. And I discovered
+              that passion while working as a food engineer.
+            </p>
           </p>
           <p>
             So I decided to follow my passion and apply at Microverse to become
-            a developer. Now I am in the top 3% web developers among 38K
-            developers around the world (according to{" "}
+            a developer.{" "}
+          </p>
+
+          <p>
+            {" "}
+            Now I am in the top 3% web developers among 38K developers around
+            the world (according to{" "}
             <a href="https://codersrank.io/" target="_blank">
               Codersrank
             </a>{" "}
