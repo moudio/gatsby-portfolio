@@ -22,8 +22,8 @@ function Project({
         <h3>{title}</h3>
         <p className={FeaturedProjectStyles.description}>{description}</p>
         <div className={FeaturedProjectStyles.technologies}>
-          {technologies.map(technology => (
-            <span>{technology}</span>
+          {technologies.map((technology, idx) => (
+            <span key={idx}>{technology}</span>
           ))}
         </div>
         <div className={FeaturedProjectStyles.links}>

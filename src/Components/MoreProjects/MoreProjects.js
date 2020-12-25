@@ -11,8 +11,8 @@ function MoreProjects() {
         <span></span>
       </div>
       <div className={MoreProjectsStyle.projectsContainer}>
-        {otherProjects.map(project => (
-          <Project {...project} />
+        {otherProjects.map((project, idx) => (
+          <Project key={idx} {...project} />
         ))}
       </div>
     </div>

@@ -12,8 +12,8 @@ function Portfolio() {
         <span></span>
       </div>
       <div>
-        {featuredProjects.map(project => {
-          return <FeaturedProject {...project} />
+        {featuredProjects.map((project, idx) => {
+          return <FeaturedProject key={idx} {...project} />
         })}
       </div>
     </div>

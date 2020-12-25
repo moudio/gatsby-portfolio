@@ -4,20 +4,36 @@ import { Link } from "gatsby"
 import "./Menu.scss"
 import { useState } from "react"
 import resume from "./Resume.pdf"
+import { useEffect } from "react"
 
 function Header() {
   const [showMobileNav, setShowMobileNav] = useState(false)
+  const [changeScroll, setchangeScroll] = useState(false)
   const handleNav = () => {
-    console.log("Clicked")
     const element = document.querySelector(".nav-icon")
     element.classList.contains("open")
       ? element.classList.remove("open")
       : element.classList.add("open")
     setShowMobileNav(!showMobileNav)
   }
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setchangeScroll(true)
+    } else {
+      setchangeScroll(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+  }, [])
   return (
     <>
-      <div className="icon-container" onClick={handleNav}>
+      <div
+        className={` icon-container ${changeScroll ? "navScroll" : ""}`}
+        onClick={handleNav}
+      >
         <div className="nav-icon"></div>
       </div>
       <nav className={HeaderStyles.nav}>
@@ -41,7 +57,11 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <ul className={`mobileNav ${showMobileNav ? "show" : "hide"}`}>
+      <ul
+        className={`mobileNav ${showMobileNav ? "show" : "hide"} ${
+          changeScroll && "navScroll"
+        }`}
+      >
         <li>
           <Link to="/">Home</Link>
         </li>

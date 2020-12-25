@@ -1,8 +1,6 @@
 import appointcar from "./Images/appointment.jpg"
 import hulu from "./Images/hulu_clone.jpg"
-import covid from "./Images/covid_tracker.png"
-import newsweek from "./Images/Newsweek.jpg"
-
+import startup from "./Images/startup.jpg"
 const data = {
   featuredProjects: [
     {
@@ -26,14 +24,13 @@ const data = {
       image: hulu,
     },
     {
-      title: "Newsweek",
-      description: "A Newsweek Clone",
-      technologies: ["HTML", "CSS"],
+      title: "Startup",
+      description: "A Fictional Startup website",
+      technologies: ["HTML", "CSS", "ReactJS"],
       slug: "newsweek",
-      github: "https://github.com/MouhaDiouf/newsweek_replica",
-      website:
-        "https://raw.githack.com/MouhaDiouf/newsweek_replica/development/index.html",
-      image: newsweek,
+      github: "https://github.com/MouhaDiouf/startup",
+      website: "https://startup-mo.netlify.app",
+      image: startup,
     },
   ],
 

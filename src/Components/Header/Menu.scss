@@ -11,8 +11,15 @@ $navy: rgb(10,25,47);
     align-items: center;
     position: fixed;
     right: 5px;
-    top: 10px;
-    z-index: 999;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+
+    &.navScroll {
+        background-color:$navy;
+
+    }
+   
 }
 
 
@@ -22,8 +29,7 @@ $navy: rgb(10,25,47);
     background-color: $lightgrey;
     position: relative;
     transition: all 0.5s ease-in-out;
-
-
+    margin-left: 15px;
     &.open {
         transform: translateX(-20px);
         background-color: transparent;
@@ -100,6 +106,7 @@ $navy: rgb(10,25,47);
 @media(max-width:770px){
 .icon-container {
     display: flex;
+    justify-content: left;
 }
 .mobileNav {
     display: flex;
