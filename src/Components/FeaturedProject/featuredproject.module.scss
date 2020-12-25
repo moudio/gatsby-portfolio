@@ -30,6 +30,7 @@ $darkergray: rgb(136, 146, 176);
     }
     span {
         color: $lightgreen;
+        display: block;
     }
     p {
         position: relative;
@@ -87,10 +88,18 @@ $darkergray: rgb(136, 146, 176);
     .project-container {
         display: block;
         
+        
         .text-container {
+            h3 {
+                margin: 10px auto;
+            }
+            span {
+                font-size: 18px;
+                margin-top: 20px;
+            }
         p {
             position: static; 
-            margin: 0 auto;
+            margin: 20px auto;
             text-align: center;
             width: 90%;
         }

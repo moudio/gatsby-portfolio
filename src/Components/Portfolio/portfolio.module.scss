@@ -35,7 +35,15 @@ $lightgreen: rgb(100,255,218);
     .portfolio {
         width: 75%;
         padding: 0px;
+       .title {
+        h2 {
+            flex: 0.6;
+        }
+        span {
+            flex: 0.4
+        }
     }
+}
 }
 
 @media(max-width: 600px){
