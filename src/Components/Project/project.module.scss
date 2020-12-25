@@ -1,14 +1,18 @@
 $lightgrey: rgb(201, 214, 246);
 $lightgreen: rgb(100,255,218);
 $lightnavy: rgb(23, 42, 69);
+$lighternavy: #172a45;
 .container {
-    width: 300px;
-    margin: 10px auto;
+    width: 270px;
+    height: 200px;
+    margin: 10px ;
     color: $lightgrey;
+    background-color: $lighternavy;
     border: 1px solid $lightgrey;
     padding: 10px;
     transition: all 0.3s ease-in-out;
     padding: 30px;
+    border-radius: 5px;
 
     &:hover {
         transform: translateY(-10px);
