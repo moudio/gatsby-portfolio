@@ -78,6 +78,10 @@ $lightgreen: rgb(100,255,218);
 }
 
 @media(max-width: 750px){
+    .about {
+        width: 90%;
+        padding: 10px;
+    }
     
     .content-image {
         flex-direction: column-reverse;
