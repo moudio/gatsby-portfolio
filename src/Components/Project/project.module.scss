@@ -4,7 +4,7 @@ $lightnavy: rgb(23, 42, 69);
 $lighternavy: #172a45;
 .container {
     width: 270px;
-    height: 200px;
+    height: 250px;
     margin: 10px ;
     color: $lightgrey;
     background-color: $lighternavy;
@@ -20,20 +20,17 @@ $lighternavy: #172a45;
         box-shadow: 5px 5px 15px 5px #000000;
     }
 
-    p {
-        // background-color: $lightnavy;
-        
-    }
 
     .icon {
-        font-size: 30px;
-        color: $lightgreen !important;
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: $lightgreen;
     }
 
     .links {
         display: flex;
         justify-content: center;
-
+        margin: 20px auto;
         font-size: 30px;
         text-decoration: none;
 

@@ -3,6 +3,7 @@ import ProjectStyles from "./project.module.scss"
 import { GrCode } from "react-icons/gr"
 import { AiFillGithub } from "react-icons/ai"
 import { FiExternalLink } from "react-icons/fi"
+import { FaCode } from "react-icons/fa"
 export default function Project({
   title,
   description,
@@ -13,7 +14,7 @@ export default function Project({
   return (
     <div className={ProjectStyles.container}>
       <div className={ProjectStyles.iconContainer}>
-        <GrCode className={ProjectStyles.icon} />
+        <FaCode className={ProjectStyles.icon} />
       </div>
       <div>
         <h3>{title}</h3>
